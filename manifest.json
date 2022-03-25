@@ -1,0 +1,28 @@
+{
+    "name": "Compose Body",
+    "description": "A very basic example of message body manipulation",
+    "version": "1",
+    "applications": {
+      "gecko": {
+        "id": "composebody@sample.extensions.thunderbird.net",
+        "strict_min_version": "74.0b2"
+      }
+    },
+    "permissions": [
+      "compose",
+      "messagesRead"
+    ],
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    },
+    "message_display_action": {
+        "default_popup": "mainPopup/popup.html",
+        "default_title": "Déchiffrer"
+      },
+    "compose_action": {
+      "default_title": "ROAD TO CHINA"
+    },
+    "manifest_version": 2
+  }
